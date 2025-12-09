@@ -1,12 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2&display=swap');
-
-* {
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2&family=Roboto&display=swap');
+*{
     margin: 0;
     padding: 0;
 }
 
-nav {
+nav{
     background-color: rgb(37, 9, 37);
     color: white;
     height: 65px;
@@ -17,11 +15,11 @@ nav {
     font-family: 'Roboto', sans-serif;
 }
 
-nav ul {
+nav ul{
     list-style-type: none;
 }
 
-.gameContainer{
+.gameContainer{ 
     display: flex;
     justify-content: center;
     margin-top: 50px;
@@ -35,14 +33,13 @@ nav ul {
     position: relative;
 }
 
-.box {
+.box{
     border: 2px solid black;
     font-size: 8vw;
     cursor: pointer;
     display: flex;
     justify-content: center;
     align-items: center;
-    
 }
 
 .box:hover{
@@ -52,21 +49,22 @@ nav ul {
 .info {
     font-size: 22px;
 }
+
 .gameInfo{
     padding: 0 34px;
     font-family: 'Baloo Bhaina 2', cursive;
 }
 
-.gameInfo h1 {
+.gameInfo h1{
     font-size: 2.5rem;
 }
 
-.imgbox img {
+.imgbox img{
     width: 0;
     transition: width 1s ease-in-out;
 }
 
-.br-0 {
+.br-0{
     border-right: 0;
 }
 
@@ -101,6 +99,7 @@ nav ul {
     background-color: #911d91;
     transition: width 1s ease-in-out;
 }
+
 @media screen and (max-width: 950px)
 {
     .gameContainer{
@@ -112,7 +111,7 @@ nav ul {
     .gameInfo h1{
         font-size: 1.5rem;
     }
-    .container{
+    .container { 
         grid-template-rows: repeat(3, 20vw);
         grid-template-columns: repeat(3, 20vw);
     }
